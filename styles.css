@@ -1,0 +1,237 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #A33327;
+    height: 100%;
+}
+
+    /* Side menu styling */    
+
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #E4E4E4;
+    width: 300px;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-wrap: wrap;
+}
+
+#navBall {
+    flex-basis: 100%;
+    position: absolute;
+    top: 142px;
+    left: 0px;
+    animation-duration: .2s;
+}
+
+@keyframes a_p{
+    from {top: 142px}
+    to {top: 210px}
+}
+@keyframes a_c{
+    from {top: 142px}
+    to {top: 783px}
+}
+@keyframes p_a{
+    from {top: 210px}
+    to {top: 142px}
+}
+@keyframes p_c{
+    from {top: 210px}
+    to {top: 783px}
+}
+@keyframes c_a{
+    from {top: 783px}
+    to {top: 142px}
+}
+@keyframes c_p{
+    from {top: 783px}
+    to {top: 210px}
+}
+
+.sideMenu .bottomMenuHalf {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    bottom: -20em;
+}
+
+.sideMenu .monogramLogo {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 100px;
+}
+
+.sideMenu .menuItem {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.sideMenu .menuItem:hover {
+    text-decoration: underline;
+}
+
+.sideMenu .menuLine {
+    border: 2px solid #E4E4E4;
+    width: 100%;
+}
+
+.menuItemHolder {
+    height: 300px;
+}
+
+#projectHolder {
+    display: none;
+}
+
+#projectHolder ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 20px;
+    border-left: 2px solid;
+    margin: 0;
+    margin-left: 30px;
+}
+
+#projectHolder ul li {
+    font-size: 30px;
+}
+
+.projectSection:hover #projectHolder{
+    display: block;
+}
+
+
+/* Page specific styling */
+
+/* About Page */
+.pageContent {
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: #161616;
+    width: 100%;
+    height: 100%;
+    color: #E4E4E4;
+}
+
+.aboutGreeting {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.aboutGreeting h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 80px;
+}
+
+.aboutGreeting h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 100px;
+}
+
+.photo_bioHolder {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo_bioHolder img {
+    height: 300px;
+    width: auto;
+    border-radius: 100%;
+    margin-right: 40px;
+}
+
+.photo_bioHolder p, .resumeLink {
+    font-family: 'IBM Plex Sans', serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.resumeLink {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #E4E4E4;
+    position: relative;
+    top: 50px;
+}
+
+/* Projects Page */
+
+.projectHeader {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.ezbiteProject, .perceptronProject {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.projectTitle {
+    font-weight: bold;
+    color: #689775;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.ezbiteProject a{
+    text-decoration: inherit;
+}
+
+.desc {
+    font-size: 20px;
+    margin: 0;
+}
+
+.more {
+    font-size: 20px;
+    display: none;
+}
+
+.moreBtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #A33327;
+    border-radius: 10%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-left: 20px;
+}
+
+.ezbitePhotoHolder {
+    display: flex;
+    flex-direction: row;
+}
+
+.ezbitePhotoHolder img {
+    height: 300px;
+    width: auto;
+    margin-left: 40px;
+}
+
+/* Contact page */
+
+.contactHolder ul li {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 40px;
+    color: #689775;
+
+}
+
+.contactHolder ul li a {
+    text-decoration: inherit;
+    color: #689775;
+}
